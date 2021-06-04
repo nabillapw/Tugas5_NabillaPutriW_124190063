@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tugas5dbfilm.view.MainActivity">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="INPUT DATA FILM"
+        android:textSize="40dp"
+        android:textColor="@color/black"
+        android:gravity="center_horizontal"/>
+
+    <EditText
+        android:id="@+id/et_judul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv1"
+        android:hint="Judul film"
+        android:textSize="25dp"/>
+
+    <EditText
+        android:id="@+id/et_tahun"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_judul"
+        android:hint="Tahun"
+        android:textSize="25dp"/>
+
+    <EditText
+        android:id="@+id/et_sinopsis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_tahun"
+        android:hint="Sinopsis"
+        android:textSize="25dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rc_main"
+        android:layout_margin="4dp"
+        android:background="@color/cardview_shadow_end_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_submit"
+        android:layout_below="@id/et_sinopsis" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_submit"
+        android:text="submit"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true" />
+
+
+</RelativeLayout>
